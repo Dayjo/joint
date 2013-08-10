@@ -9,7 +9,9 @@ First include one of the joint functions in your script
 ```javascript
 // Minified-joint (for more than 2 functions) 
 function joint(a){var b;b=a[a.length-1];a.pop();a=1<a.length?joint(a):a[0];return function(){b.apply(new a)}};
-
+```
+or
+```javascript
 // Minified-join (for only 2 functions)
 function joint(a){return function(){a[1].apply( new a[0]() );};};
 ```
