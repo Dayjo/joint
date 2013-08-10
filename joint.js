@@ -19,9 +19,7 @@ function joint( a ) {
 	return function() {
 		b.apply(new a());
 	};
-}
-
-)
+};
 
 function my_func() {
   console.log("Original functionality.");
