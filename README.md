@@ -12,7 +12,7 @@ function joint(a){var b;b=a[a.length-1];a.pop();a=1<a.length?joint(a):a[0];retur
 ```
 or
 ```javascript
-// Minified-join (for only 2 functions)
+// Minified-joint (for only 2 functions)
 function joint(a){return function(){a[1].apply( new a[0]() );};};
 ```
 
