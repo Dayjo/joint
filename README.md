@@ -8,12 +8,12 @@ There are two versions available, depending on whether you will ever need to joi
 First include one of the joint functions in your script
 ```javascript
 // Minified-joint (for more than 2 functions) 
-function joint(a){var b;b=a[a.length-1];a.pop();a=1<a.length?joint(a):a[0];return function(){b.apply(new a)}};
+function joint(a){var b;b=a[a.length-1];a.pop();a=1<a.length?joint(a):a[0];return function(){b.apply(new a)}}
 ```
 or
 ```javascript
 // Minified-joint (for only 2 functions)
-function joint(a){return function(){a[1].apply( new a[0]() );};};
+function joint(a){return function(){a[1].apply(new a[0])}}
 ```
 
 Then use it like this;
