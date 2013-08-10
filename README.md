@@ -40,4 +40,4 @@ my_func();
  */
 ```
 
-Here it is on jsbin.com http://jsbin.com/akinow/1/edit#console
+Here it is on jsbin; http://jsbin.com/akinow/1/edit#console
