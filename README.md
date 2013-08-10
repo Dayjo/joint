@@ -39,3 +39,5 @@ my_func();
  > New functionality.
  */
 ```
+
+Here it is on jsbin.com http://jsbin.com/akinow/1/edit#console
