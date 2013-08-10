@@ -16,6 +16,7 @@ or
 function joint(a){return function(){a[1].apply( new a[0]() );};};
 ```
 
+Then use it like this;
 ```javascript
 // My original function that I want to extend
 function my_func() {
