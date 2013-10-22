@@ -1,19 +1,15 @@
 ## joint.js
 
-_Allows the ability to add extra functionality to an exisintg function by joining an array of functions together._
-
-There are two versions available, depending on whether you will ever need to join more than 2 functions together
+_Allows the ability to add extra functionality to an existing function by joining an array of functions together._
 
 ### Example
-First include one of the joint functions in your script
+First include the joint function in your script
 ```javascript
-// Minified-joint (for more than 2 functions) 
-function joint(a){var b;b=a[a.length-1];a.pop();a=1<a.length?joint(a):a[0];return function(){b.apply(new a)}}
+function joint(a){var b;return b=a[a.length-1],a.pop(),a=a.length>1?joint(a):a[0],function(){b.apply(new a)}}
 ```
-or
-```javascript
-// Minified-joint (for only 2 functions)
-function joint(a){return function(){a[1].apply(new a[0])}}
+or include the js file
+```html
+<script src="//raw.github.com/Dayjo/joint/master/joint.min.js"></script>
 ```
 
 Then use it like this;
@@ -40,4 +36,4 @@ my_func();
  */
 ```
 
-Here it is on jsbin; http://jsbin.com/akinow/1/edit?js,console
+Here it is on jsbin; http://jsbin.com/orIDujE/1/edit?js,console
