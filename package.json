@@ -1,0 +1,24 @@
+{
+  "name": "joint",
+  "version": "1.0.0",
+  "description": "A javascript function to join multiple functions together",
+  "main": "joint.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dayjo/joint.git"
+  },
+  "keywords": [
+    "javascript",
+    "joining",
+    "functions"
+  ],
+  "author": "Dayjo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dayjo/joint/issues"
+  },
+  "homepage": "https://github.com/Dayjo/joint#readme"
+}
